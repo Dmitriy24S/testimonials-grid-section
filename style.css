@@ -118,3 +118,16 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+/* desktop */
+@media (min-width: 1280px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(4, minmax(200px, auto));
+    grid-template-columns: repeat(4, minmax(200px, auto));
+    grid-template-areas:
+      "card1 card1 card2 card5"
+      "card3 card4 card4 card5";
+    gap: 1.5rem;
+  }
+}
